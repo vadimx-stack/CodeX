@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены | CodeX Client - Премиум чит для Minecraft 1.16.5</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="../index.html" class="logo">
+                    <span class="logo__text">CodeX<span class="accent">Client</span></span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../index.html" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="features.html" class="nav__link">Функции</a></li>
+                        <li class="nav__item"><a href="pricing.html" class="nav__link active">Цены</a></li>
+                        <li class="nav__item"><a href="faq.html" class="nav__link">FAQ</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__buttons">
+                    <a href="login.html" class="btn btn--secondary">Войти</a>
+                    <a href="register.html" class="btn btn--primary">Регистрация</a>
+                </div>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero hero--small">
+        <div class="container">
+            <div class="hero__content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1 class="hero__title">Единая <span class="accent">подписка</span></h1>
+                <p class="hero__subtitle">Полный доступ ко всем функциям с разными вариантами по длительности</p>
+            </div>
+        </div>
+        <div class="hero__bg">
+            <div class="particles"></div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing__tabs" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; padding: 0 20px; flex-wrap: wrap;">
+                <button class="pricing__tab" data-period="monthly" style="padding: 12px 25px; font-size: 16px; border-radius: 30px; background: rgba(26, 26, 26, 0.5); border: 1px solid rgba(136, 136, 136, 0.1); color: #aaa; transition: all 0.3s ease; cursor: pointer; font-weight: 500; min-width: 120px;">Месяц</button>
+                <button class="pricing__tab active" data-period="quarterly" style="padding: 12px 25px; font-size: 16px; border-radius: 30px; background: rgba(110, 87, 255, 0.1); border: 1px solid rgba(110, 87, 255, 0.3); color: #fff; transition: all 0.3s ease; cursor: pointer; font-weight: 500; min-width: 120px;">3 месяца <span class="discount" style="background: #ff3e6c; color: white; padding: 2px 8px; border-radius: 10px; font-size: 12px; margin-left: 5px;">-7%</span></button>
+                <button class="pricing__tab" data-period="annual" style="padding: 12px 25px; font-size: 16px; border-radius: 30px; background: rgba(26, 26, 26, 0.5); border: 1px solid rgba(136, 136, 136, 0.1); color: #aaa; transition: all 0.3s ease; cursor: pointer; font-weight: 500; min-width: 120px;">Год <span class="discount" style="background: #ff3e6c; color: white; padding: 2px 8px; border-radius: 10px; font-size: 12px; margin-left: 5px;">-20%</span></button>
+            </div>
+            <div class="pricing__grid pricing__grid--single" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+                <div class="pricing-card pricing-card--featured" data-aos="fade-up" style="background: linear-gradient(145deg, #1a1a1a, #121212); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); min-height: 500px; overflow: hidden; padding: 60px 50px; margin: 0 auto; max-width: 1000px; width: 100%; border-radius: 16px; text-align: center;">
+                    <div class="pricing-card__badge" style="background-color: #ff3e6c; z-index: 2; padding: 6px 20px;">Полный доступ</div>
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title" style="color: white; font-size: 36px; margin-bottom: 30px; text-align: center; font-weight: 700;">CodeX Client</h3>
+                        <div class="pricing-card__price" style="margin-bottom: 40px; text-align: center;">
+                            <span class="price monthly" style="font-size: 64px; color: #00f7ff; font-weight: 700; display: none;">999₽</span>
+                            <span class="price quarterly active" style="font-size: 64px; color: #00f7ff; font-weight: 700;">2 799₽</span>
+                            <span class="price annual" style="font-size: 64px; color: #00f7ff; font-weight: 700; display: none;">9 590₽</span>
+                            <span class="period monthly" style="font-size: 22px; color: #aaa; margin-left: 5px; display: none;">/месяц</span>
+                            <span class="period quarterly active" style="font-size: 22px; color: #aaa; margin-left: 5px;">/3 месяца</span>
+                            <span class="period annual" style="font-size: 22px; color: #aaa; margin-left: 5px; display: none;">/год</span>
+                        </div>
+                    </div>
+                    <div class="pricing-card__features" style="margin: 30px 0; text-align: center;">
+                        <ul style="list-style: none; padding: 0; font-size: 18px; display: inline-block; text-align: left; width: 90%; max-width: 650px;">
+                            <li style="padding: 18px 0; border-bottom: 1px solid rgba(136, 136, 136, 0.1); display: flex; align-items: center; justify-content: flex-start;">
+                                <span style="color: #6e57ff; margin-right: 30px; font-weight: bold; font-size: 22px; min-width: 30px; text-align: center;">✓</span> 
+                                <span style="text-align: left; font-weight: 500; font-size: 20px;">Все боевые функции</span>
+                            </li>
+                            <li style="padding: 18px 0; border-bottom: 1px solid rgba(136, 136, 136, 0.1); display: flex; align-items: center; justify-content: flex-start;">
+                                <span style="color: #6e57ff; margin-right: 30px; font-weight: bold; font-size: 22px; min-width: 30px; text-align: center;">✓</span>
+                                <span style="text-align: left; font-weight: 500; font-size: 20px;">Продвинутый ESP</span>
+                            </li>
+                            <li style="padding: 18px 0; border-bottom: 1px solid rgba(136, 136, 136, 0.1); display: flex; align-items: center; justify-content: flex-start;">
+                                <span style="color: #6e57ff; margin-right: 30px; font-weight: bold; font-size: 22px; min-width: 30px; text-align: center;">✓</span>
+                                <span style="text-align: left; font-weight: 500; font-size: 20px;">Расширенные настройки</span>
+                            </li>
+                            <li style="padding: 18px 0; border-bottom: 1px solid rgba(136, 136, 136, 0.1); display: flex; align-items: center; justify-content: flex-start;">
+                                <span style="color: #6e57ff; margin-right: 30px; font-weight: bold; font-size: 22px; min-width: 30px; text-align: center;">✓</span>
+                                <span style="text-align: left; font-weight: 500; font-size: 20px;">Приоритетный доступ к обновлениям</span>
+                            </li>
+                            <li style="padding: 18px 0; border-bottom: 1px solid rgba(136, 136, 136, 0.1); display: flex; align-items: center; justify-content: flex-start;">
+                                <span style="color: #6e57ff; margin-right: 30px; font-weight: bold; font-size: 22px; min-width: 30px; text-align: center;">✓</span>
+                                <span style="text-align: left; font-weight: 500; font-size: 20px;">Персональные настройки</span>
+                            </li>
+                            <li style="padding: 18px 0; border-bottom: 1px solid rgba(136, 136, 136, 0.1); display: flex; align-items: center; justify-content: flex-start;">
+                                <span style="color: #6e57ff; margin-right: 30px; font-weight: bold; font-size: 22px; min-width: 30px; text-align: center;">✓</span>
+                                <span style="text-align: left; font-weight: 500; font-size: 20px;">Техническая поддержка 24/7</span>
+                            </li>
+                            <li style="padding: 18px 0; border-bottom: none; display: flex; align-items: center; justify-content: flex-start;">
+                                <span style="color: #6e57ff; margin-right: 30px; font-weight: bold; font-size: 22px; min-width: 30px; text-align: center;">✓</span>
+                                <span style="text-align: left; font-weight: 500; font-size: 20px;">Доступ ко всем эксклюзивным модулям</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card__button" style="text-align: center; margin-top: auto; padding-top: 40px;">
+                        <a href="checkout.html?plan=monthly" class="btn btn--primary btn--full period-link monthly" style="display: none; padding: 20px 30px; font-weight: 700; box-shadow: 0 6px 12px rgba(110, 87, 255, 0.2); font-size: 20px; max-width: 400px; margin: 0 auto; border-radius: 12px;">Купить на месяц</a>
+                        <a href="checkout.html?plan=quarterly" class="btn btn--primary btn--full period-link quarterly active" style="display: block; padding: 20px 30px; font-weight: 700; box-shadow: 0 6px 12px rgba(110, 87, 255, 0.2); font-size: 20px; max-width: 400px; margin: 0 auto; border-radius: 12px;">Купить на 3 месяца</a>
+                        <a href="checkout.html?plan=annual" class="btn btn--primary btn--full period-link annual" style="display: none; padding: 20px 30px; font-weight: 700; box-shadow: 0 6px 12px rgba(110, 87, 255, 0.2); font-size: 20px; max-width: 400px; margin: 0 auto; border-radius: 12px;">Купить на год</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing__advantages" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 class="section-title">Преимущества <span class="accent">длительных подписок</span></h2>
+                    <p class="section-subtitle">Экономьте, выбирая более длительный период</p>
+                </div>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <div class="advantage-item__icon">
+                            <svg class="icon icon-shield"><use xlink:href="#icon-shield"></use></svg>
+                        </div>
+                        <div class="advantage-item__content">
+                            <h3 class="advantage-item__title">Экономия до 20%</h3>
+                            <p class="advantage-item__text">При выборе годовой подписки вы экономите до 20% от стоимости месячной подписки</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-item__icon">
+                            <svg class="icon icon-update"><use xlink:href="#icon-update"></use></svg>
+                        </div>
+                        <div class="advantage-item__content">
+                            <h3 class="advantage-item__title">Бесперебойный доступ</h3>
+                            <p class="advantage-item__text">Не беспокойтесь о ежемесячном продлении и всегда имейте доступ к последним обновлениям</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-item__icon">
+                            <svg class="icon icon-target"><use xlink:href="#icon-target"></use></svg>
+                        </div>
+                        <div class="advantage-item__content">
+                            <h3 class="advantage-item__title">Приоритетная поддержка</h3>
+                            <p class="advantage-item__text">Пользователи с длительными подписками получают усиленную техническую поддержку</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-included">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Что <span class="accent">включено</span></h2>
+                <p class="section-subtitle">Полный список функций, доступных в CodeX Client</p>
+            </div>
+            <div class="features-included__grid" data-aos="fade-up">
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg class="icon icon-target"><use xlink:href="#icon-target"></use></svg>
+                    </div>
+                    <div class="feature-item__content">
+                        <h3 class="feature-item__title">KillAura</h3>
+                        <p class="feature-item__text">Продвинутый алгоритм автоматической атаки ближайших игроков с настраиваемым радиусом и фильтрами</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg class="icon icon-eye"><use xlink:href="#icon-eye"></use></svg>
+                    </div>
+                    <div class="feature-item__content">
+                        <h3 class="feature-item__title">ESP</h3>
+                        <p class="feature-item__text">Расширенное отображение игроков, мобов и важных объектов через стены с настраиваемыми фильтрами</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg class="icon icon-bolt"><use xlink:href="#icon-bolt"></use></svg>
+                    </div>
+                    <div class="feature-item__content">
+                        <h3 class="feature-item__title">X-Ray</h3>
+                        <p class="feature-item__text">Позволяет видеть руды и другие ценные блоки сквозь камень с настраиваемыми фильтрами</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg class="icon icon-target"><use xlink:href="#icon-target"></use></svg>
+                    </div>
+                    <div class="feature-item__content">
+                        <h3 class="feature-item__title">Aimbot</h3>
+                        <p class="feature-item__text">Автоматическое наведение на противников с настраиваемыми параметрами точности и скорости</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg class="icon icon-bolt"><use xlink:href="#icon-bolt"></use></svg>
+                    </div>
+                    <div class="feature-item__content">
+                        <h3 class="feature-item__title">Flight</h3>
+                        <p class="feature-item__text">Возможность летать с разными режимами и настройками, незаметно для большинства античитов</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg class="icon icon-shield"><use xlink:href="#icon-shield"></use></svg>
+                    </div>
+                    <div class="feature-item__content">
+                        <h3 class="feature-item__title">AutoTotem</h3>
+                        <p class="feature-item__text">Автоматическое использование тотемов бессмертия в критических ситуациях</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features-included__more" data-aos="fade-up">
+                <a href="features.html" class="btn btn--outline">Посмотреть все функции</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <p class="section-subtitle">Ответы на популярные вопросы о подписке и оплате</p>
+            </div>
+            <div class="faq__grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-item__question">
+                        <h3>Какой период подписки выбрать?</h3>
+                        <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+                    </div>
+                    <div class="faq-item__answer">
+                        <p>Выбор периода зависит от ваших предпочтений. Месячная подписка подойдет, если вы хотите попробовать наш продукт. Подписка на 3 месяца даст вам скидку 7% от стоимости месячной подписки. Годовая подписка наиболее выгодна – вы экономите 20% от стоимости месячного плана и получаете дополнительные преимущества в виде приоритетной поддержки.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="faq-item__question">
+                        <h3>Какие способы оплаты вы принимаете?</h3>
+                        <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+                    </div>
+                    <div class="faq-item__answer">
+                        <p>Мы принимаем различные способы оплаты, включая банковские карты (Visa, MasterCard), электронные кошельки (WebMoney, QIWI, ЮMoney), криптовалюты (Bitcoin, Ethereum) и другие популярные методы платежей. После выбора периода подписки вам будут предложены все доступные способы оплаты.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-item__question">
+                        <h3>Могу ли я изменить период подписки?</h3>
+                        <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+                    </div>
+                    <div class="faq-item__answer">
+                        <p>Да, вы можете изменить период подписки в любое время через личный кабинет. При переходе на более длительный период разница в стоимости будет рассчитана пропорционально оставшемуся времени текущей подписки. При переходе на более короткий период изменения вступят в силу при следующем продлении подписки.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-item__question">
+                        <h3>Есть ли у вас гарантия возврата денег?</h3>
+                        <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+                    </div>
+                    <div class="faq-item__answer">
+                        <p>Да, мы предлагаем 7-дневную гарантию возврата денег. Если вы недовольны нашим продуктом, вы можете запросить возврат средств в течение 7 дней с момента покупки. Пожалуйста, свяжитесь с нашей службой поддержки для оформления возврата.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-item__question">
+                        <h3>Как работает автоматическое продление подписки?</h3>
+                        <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+                    </div>
+                    <div class="faq-item__answer">
+                        <p>При оформлении подписки автоматическое продление включено по умолчанию для обеспечения непрерывного доступа к услугам. Вы получите уведомление по электронной почте за 3 дня до следующего платежа. Вы можете отключить автоматическое продление в любое время в личном кабинете.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="faq-item__question">
+                        <h3>Можно ли использовать один аккаунт на нескольких компьютерах?</h3>
+                        <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+                    </div>
+                    <div class="faq-item__answer">
+                        <p>Нет, наша лицензионная политика разрешает использование одного аккаунта только на одном компьютере одновременно. Попытки использовать один аккаунт на нескольких устройствах могут привести к блокировке аккаунта. Если вам нужен доступ для нескольких пользователей, рассмотрите возможность приобретения дополнительных лицензий.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__info">
+                    <a href="../index.html" class="logo footer__logo">
+                        <span class="logo__text">CodeX<span class="accent">Client</span></span>
+                    </a>
+                    <p class="footer__description">Премиум чит-клиент для Minecraft 1.16.5 с передовыми функциями и обходом античитов.</p>
+                    <div class="footer__socials">
+                        <a href="#" class="social-link">
+                            <svg class="icon icon-discord"><use xlink:href="#icon-discord"></use></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="icon icon-telegram"><use xlink:href="#icon-telegram"></use></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="icon icon-youtube"><use xlink:href="#icon-youtube"></use></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="icon icon-vk"><use xlink:href="#icon-vk"></use></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__nav">
+                    <div class="footer__col">
+                        <h4 class="footer__title">Навигация</h4>
+                        <ul class="footer__links">
+                            <li><a href="../index.html">Главная</a></li>
+                            <li><a href="features.html">Функции</a></li>
+                            <li><a href="pricing.html">Цены</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__title">Аккаунт</h4>
+                        <ul class="footer__links">
+                            <li><a href="login.html">Войти</a></li>
+                            <li><a href="register.html">Регистрация</a></li>
+                            <li><a href="dashboard.html">Личный кабинет</a></li>
+                            <li><a href="support.html">Поддержка</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__title">Информация</h4>
+                        <ul class="footer__links">
+                            <li><a href="terms.html">Условия использования</a></li>
+                            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                            <li><a href="refund.html">Политика возврата</a></li>
+                            <li><a href="tutorial.html">Инструкции</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    &copy; 2023 CodeX Client. Все права защищены.
+                </div>
+                <div class="footer__payments">
+                    <img src="../assets/images/payment-methods.png" alt="Способы оплаты">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="svg-icons">
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html> 
