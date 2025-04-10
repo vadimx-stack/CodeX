@@ -1,12 +1,5 @@
 # 🚀 CodeX
 
-![GitHub stars](https://img.shields.io/github/stars/vadimx-stack/landing-project?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/vadimx-stack/landing-project?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/vadimx-stack/landing-project?style=for-the-badge)
-![GitHub license](https://img.shields.io/github/license/vadimx-stack/landing-project?style=for-the-badge)
-
-
-
 ## 📋 О проекте
 
 CodeX - это инновационный программный чит для компьютерных игр с продвинутым интерфейсом, защитой от обнаружения и широким функционалом. Проект размещен на GitHub для совместной разработки сообществом, что позволяет постоянно улучшать его возможности, стабильность и безопасность. Мы приветствуем вклад других разработчиков в дальнейшее совершенствование нашего продукта.
